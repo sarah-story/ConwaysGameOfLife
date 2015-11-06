@@ -11,12 +11,12 @@ namespace BoardViewer
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Board currentBoard;
+        private ConwaysBoard currentBoard;
         private DispatcherTimer dispatcherTimer;
 
         public MainWindow()
         {
-            currentBoard = new FauxGameOfLife();
+            currentBoard = new ConwaysBoard(new bool[,] { { false, true, false, false, false, false, false, false, false, false, false, false, false }, { false, false, true, false, false, false, false, false, false, false, false, false, false }, { true, true, true, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false }, { false, false, false, false, false, false, false, false, false, false, false, false, false } });
             dispatcherTimer = new DispatcherTimer();
 
             InitializeComponent();
