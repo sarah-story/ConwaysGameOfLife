@@ -19,7 +19,9 @@ namespace ConwaysTests
             List<List<bool>> expected = new List<List<bool>>();
             expected.Add(row1);
             expected.Add(row2);
-            CollectionAssert.AreEqual(expected, board.ToList());
+            List<List<bool>> actual = board.ToList();
+            CollectionAssert.AreEqual(expected[0], actual[0]);
+            CollectionAssert.AreEqual(expected[1], actual[1]);
         }
     }
 }
