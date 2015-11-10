@@ -55,7 +55,8 @@
   <ItemGroup>
     <Compile Include="BoardTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="InfiniteBoardTests.cs" />
+    <Compile Include="CellBoardTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConwaysGameOfLife\ConwaysGameOfLife.csproj">
